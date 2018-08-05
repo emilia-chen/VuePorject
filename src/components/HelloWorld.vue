@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2 v-on:click="f()">Essential Links</h2>
     <ul>
       <li>
         <a
@@ -84,14 +84,41 @@
 </template>
 
 <script>
+
+/*
+import {foo} from '../router/profile.js'
+setTimeout(function(){
+console.log(foo);
+}, 2000);*/
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '你好,vue'
+      msg: '你好,vue:'
     }
+  },
+  methods:
+  {
+  f(){
+  console.log("f");
+ import('../router/profile.js')
+  .then(({a,b}) => {
+    console.log(a);
+     console.log("b:"+b);
+  })
+  .catch(error => {
+    console.log("error");
+    /* Error handling */
+  })
+
+
+
+  }
   }
 }
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
