@@ -1,5 +1,8 @@
 <template>
+  
+
   <div class="hello">
+  <p>{{$t('message.hello')}}</p>  
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -88,7 +91,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '你好,vue'
+      msg: '你好,vue',
+      visible: false 
     }
   }
 }
