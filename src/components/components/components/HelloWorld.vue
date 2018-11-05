@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '你好,vue'
+      msg: '你好,vue,这么多层，搞笑呢'
     }
   }
 }
@@ -96,29 +96,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus"  scoped>
-
-body
-  n = 5
-  foo: (n)em
-  foo: (n)%
-  foo: (n + 5)%
-  foo: (n * 5)px
-  foo: unit(n + 5, '%')
-  foo: unit(5 + 180 / 2, deg)
-
-
-font-size=14px
-
-div
-  background green
-  position: absolute
-  top: 50%
-  left: 50%
-  width: w = 150px
-  height: h = 80px
-  margin-left: -(w / 2)
-  margin-top: -(h / 2)
-
 h1, h2 {
   font-weight: normal;
 }
