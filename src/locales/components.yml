@@ -261,13 +261,13 @@ zh-CN:
   Custom col: 自定义列
   Basic Usage: 一般使用
   Set value as TODAY: 设置时间为今天
-  Disable future: 禁止选择过去的日期
+  Disable future: 禁止选择未来时间
   Show popup header: 显示 popup 头部
-  Please select: 请选择
+  Please select: 请选择日期
   Multiple dates: 多选
   Format multiple dates: 格式化表单值
   Empty value: 清空值
-  Toggle readonly: 切换 readonly 属性
+  Toggle readonly: 切换 readonly
   Total: 合计
   $1024: ￥1024
   Apple: 苹果
