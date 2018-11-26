@@ -1,6 +1,14 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+   
+  <on feature="feature1">
+      AWESOME FEATURE 1 is ON
+    </on>
+    <off feature="feature1">
+      AWESOME FEATURE 1 is OFF
+    </off>
+
+    <h1>{{ msg }} 智障</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -88,7 +96,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '你好,vue'
+      msg: '你好,vue',
+      VARIABLE:'123'
     }
   }
 }
@@ -97,7 +106,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
-  font-weight: normal;
+  font-weight: normal; 
+  color:green
 }
 ul {
   list-style-type: none;

@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const vuxLoader = require('vux-loader')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -10,7 +11,7 @@ function resolve (dir) {
 
 
 
-module.exports = {
+const webpackConfig = {
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
@@ -80,3 +81,58 @@ module.exports = {
     child_process: 'empty'
   }
 }
+
+module.exports = vuxLoader.merge(webpackConfig, {
+  plugins: [
+    {
+      name: 'vux-ui',
+    },
+    {
+  name: 'i18n',
+  vuxStaticReplace: false,
+  staticReplace: false,
+  extractToFiles: 'src/locales/components.yml',
+  localeList: ['en', 'zh-CN']
+},
+{
+ name: 'script-parser',
+ fn: function (source) { 
+const s=source.replace('VARIABLE', 'v2')
+   return s
+ }
+},
+{
+ name: 'style-parser',
+ fn: function (source) {
+   const s=source.replace('black', 'white')
+   return  s
+ }
+},{
+ name: "template-parser",
+  replaceList: [{
+    test: /DeathToPM/g,
+    replaceString: '微博-随时随地发现新鲜事'
+  }, {
+    test: /呵呵我们压根没有底线/g,
+    replaceString: '我是有底线的'
+  }],
+  fn: function (templateSource) {
+   const s=templateSource.replace('智障', '机智')
+   return s
+  }},
+  {
+ name: 'js-parser',
+ fn: function (source) {
+     const s=source.replace('black', 'white')
+   return s
+ }
+},
+{
+  name: 'template-feature-switch',
+  features: {
+    feature1: false,
+    feature2: false
+  }
+}
+  ],
+})
