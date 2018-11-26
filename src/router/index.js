@@ -70,6 +70,43 @@ import XImg from '@/components/XImg'
 
 
 
+import Actionsheet from '@/components/Actionsheet'
+import Alert from '@/components/Alert'
+import Confirm from '@/components/Confirm'
+import InlineLoading from '@/components/InlineLoading'
+import LoadMore from '@/components/LoadMore'
+import Loading from '@/components/Loading'
+import Msg from '@/components/Msg'
+import Popup from '@/components/Popup'
+import PopupHeader from '@/components/PopupHeader'
+import Popover from '@/components/Popover'
+import Spinner from '@/components/Spinner'
+import Toast from '@/components/Toast'
+import XDialog from '@/components/XDialog'
+
+
+import ButtonTab from '@/components/ButtonTab'
+
+
+import Tab from '@/components/Tab'
+import Tabbar from '@/components/Tabbar'
+import XHeader from '@/components/XHeader'
+import Timeline from '@/components/Timeline'
+import VChart from '@/components/VChart'
+import XCircle from '@/components/XCircle'
+
+
+
+
+import Blur from '@/components/Blur'
+import Countdown from '@/components/Countdown'
+import ColorPicker from '@/components/ColorPicker'
+import Masker from '@/components/Masker'
+import WechatEmotion from '@/components/WechatEmotion'
+import Drawer from '@/components/Drawer'
+
+import Tools from '@/components/Tools'
+
 
 
 Vue.use(Router)
@@ -399,6 +436,157 @@ export default new Router({
       name: 'XImg',
       component: XImg
     }  
+ ,
+     {
+      path: '/Actionsheet',
+      name: 'Actionsheet',
+      component: Actionsheet
+    }  
+ ,
+     {
+      path: '/Alert',
+      name: 'Alert',
+      component: Alert
+    }  
+ ,
+     {
+      path: '/Confirm',
+      name: 'Confirm',
+      component: Confirm
+    }  
+ ,
+     {
+      path: '/InlineLoading',
+      name: 'InlineLoading',
+      component: InlineLoading
+    }  
+ ,
+     {
+      path: '/LoadMore',
+      name: 'LoadMore',
+      component: LoadMore
+    }  
+ ,    {
+      path: '/Loading',
+      name: 'Loading',
+      component: Loading
+    }  
+ ,
+     {
+      path: '/Msg',
+      name: 'Msg',
+      component: Msg
+    }  
+ ,
+     {
+      path: '/Popup',
+      name: 'Popup',
+      component: Popup
+    }  
+ ,
+     {
+      path: '/PopupHeader',
+      name: 'PopupHeader',
+      component: PopupHeader
+    }   ,
+     {
+      path: '/Popover',
+      name: 'Popover',
+      component: Popover
+    }  
 
+ ,
+     {
+      path: '/Spinner',
+      name: 'Spinner',
+      component: Spinner
+    }  
+ ,
+     {
+      path: '/Toast',
+      name: 'Toast',
+      component: Toast
+    }  
+ ,
+     {
+      path: '/XDialog',
+      name: 'XDialog',
+      component: XDialog
+    } ,
+    {
+      path: '/ButtonTab',
+      name: 'ButtonTab',
+      component: ButtonTab
+    }  ,
+    
+   
+     {
+      path: '/Tab',
+      name: 'Tab',
+      component: Tab
+    }  ,
+     {
+      path: '/Tabbar',
+      name: 'Tabbar',
+      component: Tabbar
+    }  ,
+     {
+      path: '/XHeader',
+      name: 'XHeader',
+      component: XHeader
+    }
+     ,
+     {
+      path: '/Timeline',
+      name: 'Timeline',
+      component: Timeline
+    }  ,
+     {
+      path: '/VChart',
+      name: 'VChart',
+      component: VChart
+    }          
+  
+,
+     {
+      path: '/XCircle',
+      name: 'XCircle',
+      component: XCircle
+    } ,
+     {
+      path: '/Blur',
+      name: 'Blur',
+      component: Blur
+    } ,
+     {
+      path: '/Countdown',
+      name: 'Countdown',
+      component: Countdown
+    } ,
+     {
+      path: '/ColorPicker',
+      name: 'ColorPicker',
+      component: ColorPicker
+    } ,
+     {
+      path: '/Masker',
+      name: 'Masker',
+      component: Masker
+    } ,
+     {
+      path: '/WechatEmotion',
+      name: 'WechatEmotion',
+      component: WechatEmotion
+    } ,
+     {
+      path: '/Drawer',
+      name: 'Drawer',
+      component: Drawer
+    },
+     {
+      path: '/Tools',
+      name: 'Tools',
+      component: Tools
+    }
   ]
 })

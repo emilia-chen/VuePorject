@@ -248,6 +248,94 @@ en:
   type = canvas: type = canvas
   current url: current url
   current fgColor: current fgColor
+  Prevent auto closing: Prevent auto closing
+  Close me: Close me
+  Deleted~: Deleted~
+  'Slot: header': 'Slot: header'
+  Android Theme: Android Theme
+  Show cancel menu: Show cancel menu
+  Menu as tips: Menu as tips
+  Prevent closing when clicking mask: Prevent closing when clicking mask
+  Share to friends: Share to friends
+  Share to timeline: Share to timeline
+  Take Photo: Take Photo
+  Choose from photos: Choose from photos
+  Actionsheet header: >-
+    Are you sure?<br/><span style="color:#666;font-size:12px;">Once deleted, you
+    will never find it.</span>
+  '<span style="color:red">Delete</span>': '<span style="color:red">Delete</span>'
+  Array menu: Array menu
+  Show Me: Show Me
+  Use as a plugin: Use as a plugin
+  Congratulations: Congratulations
+  Your Message is sent successfully~: Your Message is sent successfully~
+  Will auto close in 3s: Will auto close in 3s
+  Toggle: Toggle
+  Toggle show-input: Toggle show-input
+  Toggle_android: Toggle_android
+  Are you sure?: Are you sure?
+  Confirm deleting the item: Confirm deleting the item
+  Please input something: Please input something
+  Plugin usage: Plugin usage
+  Show: Show
+  closeOnConfirm=false: closeOnConfirm=false
+  Set default input value: Set default input value
+  Call prompt by using plugin: Call prompt by using plugin
+  showCancelButton=false: showCancelButton=false
+  loading: loading
+  正在加载: Loading
+  暂无数据: The End
+  Show loading: show loading (close in 2s)
+  Show delay loading: show loading delay after 1s
+  No loading text: No loading text
+  Yeah! You make it: Yeah! You make it
+  Msg description: Msg description
+  Primary button: Primary button
+  Secondary button: Secondary button
+  cancel: cancel
+  done: done
+  Please select your card: Please select your card
+  used with Popup: used with Popup
+  Card 1: Card 1
+  Card 2: Card 2
+  Card 3: Card 3
+  Card 4: Card 4
+  Popover on top: Popover on top
+  Popover on bottom: Popover on bottom
+  Popover on left: Popover on left
+  Popover on right: Popover on right
+  'type:text': 'type:text'
+  'type:cancel': 'type:cancel'
+  'type:success': 'type:success'
+  'type:warn': 'type:warn'
+  'time:1s': 'time:1s'
+  long text: long text
+  success: success
+  show me code: show me code
+  'prop:text': 'prop:text'
+  default: default
+  As a plugin(>=v0.1.3): As a plugin(>=v0.1.3)
+  position: position
+  hide on clicking mask: hide on clicking mask
+  use .sync: use .sync
+  disable background scrolling: disable background scrolling
+  long long content: long long content
+  custom dialog style: custom dialog style
+  show toast: show toast
+  Today: Today
+  This Week: This Week
+  This Month: This Month
+  Articles: Articles
+  Products: Products
+  Articles sync: Articles sync
+  Products sync: Products sync
+  All Messages: All Messages
+  Red Dot: Red Dot
+  Use v-model to set selected item: Use v-model to set selected item
+  set bar-active-color: set bar-active-color
+  anticlockwise: anticlockwise
+  A cell without title: A cell without title
+  wechat emotions: wechat emotions
 zh-CN:
   Horizontal: 水平
   Honrizontal with no gutter: 水平无间隙
@@ -498,3 +586,89 @@ zh-CN:
   type = canvas: 类型为 canvas
   current url: 当前url
   current fgColor: 当前颜色
+  Prevent auto closing: 不自动关闭
+  Close me: 点我关闭
+  Deleted~: 删除成功
+  'Slot: header': 使用 header slot
+  Android Theme: 安卓风格
+  Show cancel menu: 显示取消菜单
+  Menu as tips: 显示提示文字
+  Prevent closing when clicking mask: 点击遮罩区域不自动关闭
+  Share to friends: 分享给朋友
+  Share to timeline: 分享到朋友圈
+  Take Photo: 拍照
+  Choose from photos: 从相册选择
+  Actionsheet header: '确定咩?<br/><span style="color:#666;font-size:12px;">删除后就无法撤消了哦</span>'
+  '<span style="color:red">Delete</span>': '<span style="color:red">删除</span>'
+  Array menu: 使用数组定义菜单
+  Show Me: 显示
+  Use as a plugin: 以插件方式调用
+  Congratulations: 恭喜
+  Your Message is sent successfully~: 消息已成功发送
+  Will auto close in 3s: 3秒后关闭
+  Toggle: 显示/隐藏
+  Toggle show-input: 显示Prompt
+  Toggle_android: 安卓风格
+  Are you sure?: 确定咩？
+  Confirm deleting the item: 操作提示
+  Please input something: 请输入些什么
+  Plugin usage: 插件形式调用
+  Show: 显示
+  closeOnConfirm=false: 阻止自动关闭
+  Set default input value: 设置默认输入文字
+  Call prompt by using plugin: 插件形式调用prompt
+  showCancelButton=false: 隐藏取消按钮
+  loading: 加载中
+  正在加载: 正在加载
+  暂无数据: 暂无数据
+  Show loading: 显示loading (2s后关闭)
+  Show delay loading: 延时1s后显示
+  No loading text: 无提示文字
+  Yeah! You make it: 操作成功
+  Msg description: '内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<a href="javascript:void(0);">文字链接</a>'
+  Primary button: 推荐操作
+  Secondary button: 辅助操作
+  cancel: 取消
+  done: 确定
+  Please select your card: 请选择银行卡
+  used with Popup: Popup 中使用
+  Card 1: 招商银行
+  Card 2: 工商银行
+  Card 3: 农业银行
+  Card 4: 增加银行卡
+  Popover on top: 上方出现
+  Popover on bottom: 下方出现
+  Popover on left: 左边出现
+  Popover on right: 右边出现
+  'type:text': type为text
+  'type:cancel': type为cancel
+  'type:success': type为success
+  'type:warn': type为警告
+  'time:1s': 显示时间1s
+  long text: 很长的文字
+  success: 成功啦~
+  show me code: 'Talk is cheap, show me the code.'
+  'prop:text': 设置text
+  default: 默认
+  As a plugin(>=v0.1.3): 插件形式调用
+  position: 位置
+  hide on clicking mask: 点击遮罩自动关闭
+  use .sync: 使用 .sync
+  disable background scrolling: 背景不可滚动
+  long long content: 很长很长的内容
+  custom dialog style: 自定义 dialog 容器样式
+  show toast: 显示 toast
+  Today: 今天
+  This Week: 本周
+  This Month: 本月
+  Articles: 文章
+  Products: 商品
+  Articles sync: 文章同步
+  Products sync: 商品同步
+  All Messages: 所有消息
+  Red Dot: 红点
+  Use v-model to set selected item: 使用 v-model 设置当前选中项
+  set bar-active-color: 设置bar颜色
+  anticlockwise: 逆时针
+  A cell without title: 不带标题的 cell
+  wechat emotions: 微信表情列表

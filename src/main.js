@@ -11,6 +11,7 @@ import vuexI18n from 'vuex-i18n';
 import { DatetimePlugin } from 'vux'
 
 Vue.use(Vuex);
+import  { ConfirmPlugin,LoadingPlugin } from 'vux'
 
 Vue.config.productionTip = false
 
@@ -22,7 +23,7 @@ const store = new Vuex.Store({
     }
 });
 Vue.use(vuexI18n.plugin, store);
-Vue.use(DatetimePlugin);
+
 const translationsEn = {
     "content": "This is some {type} content",
     "My nice title": "Dies ist ein toller Inhalt",
@@ -51,6 +52,9 @@ for (let i in finalLocales) {
 
 // set the start locale to use
 Vue.i18n.set('zh-CN');
+Vue.use(DatetimePlugin);
+Vue.use(LoadingPlugin)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

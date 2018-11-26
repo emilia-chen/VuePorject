@@ -93,6 +93,12 @@ module.exports = vuxLoader.merge(webpackConfig, {
   staticReplace: false,
   extractToFiles: 'src/locales/components.yml',
   localeList: ['en', 'zh-CN']
+},
+{
+ name: 'script-parser',
+ fn: function (source) {
+   return source.replace('VARIABLE', 'v2')
+ }
 }
   ],
 })

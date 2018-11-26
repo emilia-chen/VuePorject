@@ -1,8 +1,10 @@
 <template>
   <div>
-    <div v-for="src in list" style="background-color:yellow;text-align:center;">
+   <img src="../assets/logo.png" />
+    <div v-for="src in list" style="background-color:white;text-align:center;">
       <span style="font-size:20px;">Loading</span>
-      <x-img :src="src" :webp-src="`${src}`" @on-success="success" @on-error="error" class="ximg-demo" error-class="ximg-error" :offset="-100" container="#vux_view_box_body"></x-img>
+  
+      <x-img :src="src"  default-src="./assets/logo.png" @on-success="success" @on-error="error" class="ximg-demo" error-class="ximg-error" :offset="-100" container="#vux_view_box_body"></x-img>
     </div>
   </div>
 </template>
@@ -28,7 +30,7 @@ export default {
   data () {
     return {
       list: [
-        'https://o5omsejde.qnssl.com/demo/test1.jpg',
+        '../assets/logo.png',
         'https://o5omsejde.qnssl.com/demo/test2.jpg',
         'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543148581&di=f8e3998e754c21f28d6b4bf59f4bbbdb&imgtype=jpg&er=1&src=http%3A%2F%2Fpic34.photophoto.cn%2F20150308%2F0017030570571906_b.jpg',
         'https://o5omsejde.qnssl.com/demo/test4.jpg',
