@@ -99,6 +99,10 @@ module.exports = vuxLoader.merge(webpackConfig, {
  fn: function (source) {
    return source.replace('VARIABLE', 'v2')
  }
+},
+{
+  name: 'less-theme',
+  path: 'src/assets/styles/theme.less'
 }
   ],
 })

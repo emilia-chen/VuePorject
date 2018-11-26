@@ -69,8 +69,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .popover-demo-content {
   padding: 5px 10px;
 }
+button{
+  color:@a-color
+}
+
+
 </style>
