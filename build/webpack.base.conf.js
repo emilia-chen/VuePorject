@@ -10,7 +10,6 @@ function resolve (dir) {
 }
 
 
-
 const webpackConfig = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -133,6 +132,39 @@ const s=source.replace('VARIABLE', 'v2')
     feature1: false,
     feature2: false
   }
-}
+},
+{
+  name: 'html-build-callback',
+  events: {
+   'after-html-processing': function (data, cb) {
+    // console.log('ddata',data)
+      data.html += 'magic footer'
+      // console.log('dafter',data)
+      cb(null, data)
+   }
+  }
+},
+{
+ name: 'build-done-callback',
+ fn: function () {
+   console.log('done!donedonedonedonedone')
+ }
+},
+/*{
+  name: 'duplicate-style',
+  options: {
+    cssProcessorOptions : {
+      safe: true,
+      zindex: false,
+      autoprefixer: {
+        add: true,
+        "browsers": [
+          "iOS >= 7",
+          "Android >= 4.1"
+        ]
+      }
+    }
+  }
+}*/
   ],
 })
