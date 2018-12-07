@@ -3,7 +3,7 @@
 > A Vue.js project
 
 ## Build Setup
-c
+
 ``` bash
 # install dependencies
 npm install
