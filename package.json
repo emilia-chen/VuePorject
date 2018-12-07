@@ -10,6 +10,18 @@
     "build": "node build/build.js",
      "a": "eslint src/**/*.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -env $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "eslint"
+    ]
+  },
   "dependencies": {
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
