@@ -8,7 +8,7 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-
+console.log(path.resolve(__dirname, '../'))
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -31,6 +31,16 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+  test: /\.(js|vue)$/,
+  loader: 'eslint-loader',
+  enforce: 'pre',
+  include: [resolve('src'),resolve('index.html')],
+  options: {
+    formatter: require('eslint-friendly-formatter'),
+    emitWarning: true,
+    fix: true, // default: false. might cause webpack to enter an infinite build loop if some issues cannot be fixed properly.
+  }},
       {
         test: /\.vue$/,
         loader: 'vue-loader',
