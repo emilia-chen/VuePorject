@@ -1,14 +1,11 @@
 <template>
   <div class="hello">
-    <h1 class="mytest">{{ msg }}</h1>
+    <h1 class="mytest">滚</h1>
     <h2>Essential Links</h2>
-    <router-link to="/style" tag="li">
-    是地方的v啊
-    </router-link>
     <ul>
       <li>
         <a
-          href="/Style"
+          href="https://vuejs.org"
           target="_blank"
         >
           Core Docs
@@ -87,7 +84,6 @@
 </template>
 
 <script>
-console.log(12134)
 export default {
   name: 'HelloWorld',
   data () {
@@ -100,8 +96,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.hello{
-  color:blue;
+.mystyle{
+  color:red;
 }
 h1, h2 {
   font-weight: normal;
