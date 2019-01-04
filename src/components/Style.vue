@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 class="mytest">滚</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -90,18 +90,15 @@ export default {
     return {
       msg: '你好,vue'
     }
-  },
-  async mounted(){
- new Promise(function () {});
-   console.log(123)
-   console.log("foobar".includes("foso"))
-   Object.assign({a:1})
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.mystyle{
+  color:red;
+}
 h1, h2 {
   font-weight: normal;
 }
