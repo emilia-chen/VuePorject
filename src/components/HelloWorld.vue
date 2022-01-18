@@ -3,11 +3,11 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
 
-  <video-player class="video-player vjs-custom-skin"
+<!--   <video-player class="video-player vjs-custom-skin"
                   ref="videoPlayer"
                   :playsinline="true"
                   :options="playerOptions" >
-    </video-player>
+    </video-player> -->
    <ul>
       <li>
         <a
@@ -133,13 +133,56 @@ export default {
           {
            // withCredentials: false,
            // type: 'application/x-mpegURL',
-            src:'https://thumbnail0.baidupcs.com/thumbnail/56711a4546a5b87d75bfa3ed08dc6753?fid=1059592217-250528-1106221993213679&time=1625220000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-rVmsW9t7RCku%2FD0sBV3kupe9vyc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8850536309077779247&dp-callid=0&file_type=0&size=c850_u580&quality=100&vuk=-&ft=video'//'http://vjs.zencdn.net/v/oceans.mp4'
+            src:'https://ky-prd-iot.obs.cn-north-4.myhuaweicloud.com:443/1623202236068.mp4?AccessKeyId=8XYKNZX22QJNBCEPON0P&Expires=1625219362&Signature=gUh8Zz443%2BLVrE%2FII8s6CTRGP%2Fc%3D'//'http://vjs.zencdn.net/v/oceans.mp4'
           }
         ],
         poster: '',
         notSupportedMessage: '此视频暂无法播放，请稍后再试' // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
       }}
+    },
+  mounted(){
+    this.a().then(()=>{
+      console.log(2);
+    })
+  },
+  methods: {
+  async a(){
+      console.log(1)
+      await this.b();
+       console.log(3)
+    },
+    d(){
+      b();
+      console.log('d');
+    },
+     c(){
+  // console.log(4)
+  return new Promise(function(resolve,reject){
+    //   console.log(4)
+
+    setTimeout(function(){
+        console.log(5)
+      resolve(555)
     }
+    , 2000)
+  });
+
+  },
+      b(){
+  // console.log(4)
+  return new Promise(function(resolve,reject){
+    //   console.log(4)
+
+    setTimeout(function(){
+        console.log(5)
+      resolve(555)
+    }
+    , 2000)
+  });
+
+  }
+  },
+
 }
 </script>
 
