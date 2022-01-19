@@ -141,14 +141,14 @@ export default {
       }}
     },
   mounted(){
-    this.a().then(()=>{
-      console.log(2);
-    })
+    // this.a().then(()=>{
+    //   console.log(2);
+    // })
   },
   methods: {
   async a(){
       console.log(1)
-      await this.b();
+     // await this.b();
        console.log(3)
     },
     d(){
